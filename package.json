@@ -5,6 +5,7 @@
   "author": "John Joshua Ferrer <johnjoshuaferrer@disroot.org>",
   "license": "MIT",
   "private": "true",
+  "main": "dist/main.js",
   "scripts": {
     "start:dev": "tsc -w",
     "clean": "rimraf dist",
