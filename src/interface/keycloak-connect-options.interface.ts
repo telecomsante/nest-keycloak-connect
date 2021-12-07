@@ -121,6 +121,12 @@ export interface KeycloakConnectConfig extends NestKeycloakConfig {
   bearerOnly?: boolean;
 
   /**
+   * Authorized URL to validate token.
+   * @see {KeycloakConnectOptions#authorizedRealmUrls}
+   */
+  authorizedRealmUrls?: string[];
+
+  /**
    * Formatted public-key.
    * @see {KeycloakConnectOptions#realmPublicKey}
    */

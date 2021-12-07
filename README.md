@@ -111,6 +111,7 @@ KeycloakConnectModule.register(`./keycloak.json`, {
   cookieKey: 'KEYCLOAK_JWT',
   logLevels: ['verbose'],
   useNestLogger: false,
+  authorizedRealmUrls: [],
   policyEnforcement: PolicyEnforcementMode.ENFORCING,
   tokenValidation: TokenValidation.NONE,
 })

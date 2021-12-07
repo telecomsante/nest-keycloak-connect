@@ -11,7 +11,8 @@
     "build:copy": "cpr README.md dist/README.md && cpr LICENSE dist/LICENSE && cpr package.json dist/package.json",
     "release": "release-it",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint ./src --ext .ts"
+    "lint": "eslint ./src --ext .ts",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "nestjs",
@@ -27,7 +28,7 @@
     "@nestjs/core": "^6.0.0 || ^7.0.0 || ^8.0.0",
     "@nestjs/common": "^6.0.0 || ^7.0.0 || ^8.0.0",
     "@nestjs/graphql": "^6.0.0 || ^7.0.0 || ^8.0.0",
-    "keycloak-connect": ">= 10.0.0 < 16.0.0"
+    "keycloak-connect": ">= 10.0.0 < 17.0.0"
   },
   "devDependencies": {
     "@nestjs/common": "^8.0.0",
@@ -45,7 +46,7 @@
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-prettier": "^3.4.0",
     "graphql": "^15.0.0",
-    "keycloak-connect": "^14.0.0",
+    "keycloak-connect": "github:telecomsante/keycloak-nodejs-connect#16.0.1",
     "prettier": "^1.19.1",
     "reflect-metadata": "^0.1.12",
     "release-it": "^14.10.1",
