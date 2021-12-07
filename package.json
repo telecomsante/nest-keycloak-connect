@@ -4,6 +4,7 @@
   "description": "keycloak-nodejs-connect module for Nest",
   "author": "John Joshua Ferrer <johnjoshuaferrer@disroot.org>",
   "license": "MIT",
+  "private": "true",
   "scripts": {
     "start:dev": "tsc -w",
     "clean": "rimraf dist",
