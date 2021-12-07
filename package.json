@@ -11,7 +11,8 @@
     "build:copy": "cpr README.md dist/README.md && cpr LICENSE dist/LICENSE && cpr package.json dist/package.json",
     "release": "release-it",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint ./src --ext .ts"
+    "lint": "eslint ./src --ext .ts",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "nestjs",
